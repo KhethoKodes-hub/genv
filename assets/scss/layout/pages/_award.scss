@@ -1,0 +1,108 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  1.7 Award css
+/*----------------------------------------*/
+
+.si-award{
+    &-box-2{
+        margin-top: -105px;
+        margin-left: 23px;
+        @media (max-width:1199px){
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        @media #{$md,$xs}{
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+    }
+    &-box-3{
+        margin-top: -258px;
+        margin-left: 45px;
+        @media (max-width:1199px){
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    }
+    &-box-number{
+        display: inline-block;
+        width: 260px;
+        height: 260px;
+        place-content: center;
+        text-align: center;
+        border-radius: 50%;
+        p{
+            font-weight: 700;
+        }
+    }
+    &-box-number-2{
+        border: 1px solid var(--si-border-2);
+        width: 300px;
+        height: 300px;
+        @media #{$xs}{
+            width: 260px;
+            height: 260px;
+        }
+    }
+    &-box-number-3{
+        border: 1px solid var(--si-border-2);
+        filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.08));
+        width: 360px;
+        height: 360px;
+        @media #{$xs}{
+            width: 260px;
+            height: 260px;
+        }
+    }
+    &-box-content-inner{
+        gap: 30px;
+        @media #{$xs}{
+            display: block !important; 
+        }
+        span{
+            background: var(--si-common-white);
+            padding: 2px 23px;
+            border-radius: 50px;
+            border: 1px solid var(--si-border-1);
+            display: inline-block;
+            @media #{$xs}{
+                margin-bottom: 15px; 
+            }
+        }
+
+    }
+    &-box-content-text svg{
+        @media #{$xs}{
+            width: 260px !important; 
+        }
+    }
+    &-shape {
+        position: absolute;
+        top: -21%;
+        left: -30px;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        @media (max-width:1399px){
+            display: none;
+        }
+    }
+    &-shape2 {
+        position: absolute;
+        right: 9.2%;
+        bottom: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media #{$md,$xs}{
+            display: none;
+        }
+    }
+}
+
+
+

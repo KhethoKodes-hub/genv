@@ -1,0 +1,149 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  2.4 Portfolio Details css
+/*----------------------------------------*/
+
+.si__portfolio__details{
+    &__area{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @media #{$lg2}{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    &__right{
+        display: flex;
+        gap: 127px;
+        justify-content: center;
+        background: #fff;
+        padding: 38px 0 38px 0;
+        margin-top: -78px;
+        @media #{$xl}{
+            gap: 90px;
+            margin-top: 0;
+        }
+        @media #{$lg}{
+            gap: 60px;
+            margin-top: 0;
+        }
+        @media #{$lg2}{
+            margin-top: 25px;
+            padding: 0;
+            display: block;
+        }
+    }
+    &__content{
+        @media #{$lg2}{
+            margin-bottom: 15px;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 34px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        @media #{$xl}{
+            display: block;
+        }
+        @media #{$lg}{
+            display: block;
+        }
+        @media #{$lg2}{
+            display: block;
+        }
+    }
+    &__text{
+        margin-top: 27px;
+        p{
+            br{
+                @media #{$xl}{
+                    display: none;
+                }
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+        span{
+            font-size: 20px;
+            color: var(--si-common-black);
+            display: inline-block;
+            margin-top: 5px;
+            margin-bottom: 22px;
+        }
+    }
+    &__list{
+        margin-top: 26px;
+        ul{
+            li{
+                list-style: none;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 18px;
+                color: var(--si-common-black);
+                img{
+                    margin-right: 7px;
+                }
+            }
+        }
+        p{
+            margin-top: 33px;
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__button{
+        background: var(--si-common-surface);
+        border: 1px solid rgba(18, 18, 18, 0.25);
+        padding: 9px 9px 9px 9px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        @media #{$sm2}{
+            display: block;
+        }
+    }
+    &__previous{
+        a{
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--si-common-black);
+            background: var(--si-common-white);
+            padding: 14px 30px 14px 9px;
+            border: 1px solid rgba(18, 18, 18, 0.25);
+            @media #{$sm2}{
+                width: 100%;
+                text-align: center;
+            }
+            i{
+                color: var(--si-common-white);
+                background: var(--si-common-black);
+                padding: 14px 28px 14px 28px;
+                margin-right: 15px;
+                transition: 0.6s;
+                &:hover{
+                    background: var(--si-theme-primary);
+                }
+            }
+        }
+    }
+}
+.next a{
+    padding: 14px 0px 14px 74px;
+    i{
+        margin-right: 9px;
+        margin-left: 15px;
+    }
+}

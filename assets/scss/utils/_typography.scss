@@ -1,0 +1,20 @@
+
+// font url
+$font-url: 'https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap';
+
+// font family
+$font-family: (
+    'ff': (
+        'body': "'Urbanist', sans-serif",
+        'heading': "'Open Sans', sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"',
+    )
+);
+
+// font size
+$font-size: (
+    'fz': (
+        'body': 14px,
+        'p': 16px,
+    )
+);

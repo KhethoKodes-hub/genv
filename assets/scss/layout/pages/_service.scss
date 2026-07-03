@@ -1,0 +1,243 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  1.4 Service css
+/*----------------------------------------*/
+
+.si-service{
+    &-box{
+        background: var(--si-common-white);
+        padding: 30px 35px 28px 35px;
+        overflow: hidden;
+        @media (max-width:1199px){
+            margin-bottom: 30px;
+        }
+    }
+    &-box:hover &-border-shape span svg{
+        stroke-opacity:1;
+    }
+    &-title{
+        margin-bottom: 25px;
+        transition: .5s;
+        a{
+            transition: .5s;
+        }
+    }
+    &-list{
+        padding-top: 215px;
+    }
+    &-border-shape span{
+        position: absolute;
+        left: -2px;
+        top: 47.5%;
+        svg{
+            stroke-opacity:0.28;
+            @include si-transition(.3s);
+        }
+    }
+    &-border-shape h4{
+        position: absolute;
+        left: 47.5%;
+        top: 29.5%;
+    }
+    &-img-text{
+        font-size: 200px;
+        font-weight: 800;
+        line-height: 1.1;
+        background-image: url(../img/service/text1.jpg);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    &-img-text-2{
+        font-size: 200px;
+        font-weight: 800;
+        line-height: 1.1;
+        background-image: url(../img/service/text2.jpg);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    &-img-text-3{
+        font-size: 200px;
+        font-weight: 800;
+        line-height: 1.1;
+        background-image: url(../img/service/text3.jpg);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    &-list{
+        position: relative;
+        z-index: 1;
+        ul li{
+            list-style: none;
+            color: var(--si-common-black);
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            span{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+// Service Style Two
+.si-service-2{
+    &-area{
+        position: relative;
+    }
+    &-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--si-border-1);
+        padding: 42px 49px 30px 49px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        @media #{$lg2}{
+            display: block;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            left: 0;
+            bottom: 0;
+            background: url(../img/service/bg-2.jpg);
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            opacity: 0;
+            z-index: -1;
+            border-radius: 10px;
+            transition: 0.6s;
+        }
+    }
+    &-box:hover::before{
+        height: 100%;
+        opacity: 1;
+        bottom: 0;
+    }
+    &-main{
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        @media #{$lg2}{
+            gap: 10px;
+        }
+    }
+    &-number{
+        span{
+            font-weight: 600;
+            font-size: 18px;
+            transition: 0.6s;
+        }
+    }
+    &-box:hover &-number span{
+        color: var(--si-common-white);
+    }
+    &-text{
+        h3{
+            margin-bottom: 20px;
+            a{
+                transition: .3s;
+            }
+        }
+    }
+    &-box:hover &-text h3{
+        color: var(--si-common-white);
+    }
+    &-box:hover &-text p{
+        color: var(--si-common-white);
+    }
+    &-list{
+        @media #{$lg2}{
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+        ul li{
+            list-style: none;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: var(--si-common-black);
+            transition: 0.6s;
+            @media #{$sm2}{
+                font-size: 18px;
+            }
+            span{
+                font-weight: 800;               
+                color: var(--si-common-black);
+                margin-right: 11px;
+                transition: 0.6s;
+            }
+        }
+        p{
+            @media #{$sm2}{
+                font-size: 18px;
+            }
+        }
+    }
+    &-box:hover &-list ul li{
+        color: var(--si-common-white);
+    }
+    &-box:hover &-list ul li span{
+        color: var(--si-common-white);
+    }
+    &-icon{
+        a{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px solid var(--si-common-black);
+            transition: 0.6s;
+            @media #{$lg2}{
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+            }
+            svg{
+                transition: .5s;
+            }
+        }
+    }
+    &-box:hover &-icon a{
+        transform: rotate(80deg);
+        background: var(--si-theme-primary);
+        border: 1px solid var(--si-theme-primary);
+    }
+    &-box:hover &-icon a img{
+        filter: brightness(0) invert(1);
+    }
+    &-shape{
+        position: absolute;
+        top: 0;
+        bottom: 23.6%;
+        left: 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        @media #{$x3l,$xxl,$xl,$lg,$lg2}{
+            display: none;
+        }
+    }
+}

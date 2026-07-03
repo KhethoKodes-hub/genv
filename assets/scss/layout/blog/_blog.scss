@@ -1,0 +1,67 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  1.0 Blog css
+/*----------------------------------------*/
+
+.si__our__blog{
+    &__box{
+        margin-bottom: 40px;
+        @media #{$lg2}{
+            margin-bottom: 28px;
+        }
+    }
+    &__btn a{
+        font-weight: 500;
+        font-size: 20px;
+        position: relative;
+        color: var(--si-common-gray-2);
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 3px;
+            left: -1px;
+            background: var(--si-common-gray-2);
+            width: 95px;
+            height: 1px;
+        }
+        i{
+            color: var(--si-common-black);
+            margin-left: 5px;
+        }
+    }
+    &__number{
+        margin-top: 59px;
+        @media #{$lg2}{
+            margin-top: 0;
+        }
+        ul{
+            li{
+                list-style: none;
+                display: inline;
+                margin-right: 10px;
+                a{
+                    display: inline-block;
+                    font-weight: 500;
+                    font-size: 18px;
+                    background: var(--si-common-white);
+                    color: var(--si-common-black);
+                    border: 1px solid rgba(18, 18, 18, 0.25);
+                    border-radius: 10px;
+                    padding: 15px 21px 15px 21px;                   
+                    @media #{$lg2}{
+                        padding: 11px 15px 11px 15px;
+                    }
+                    transition: 0.6s;
+                    &:hover{
+                        background: var(--si-theme-primary);
+                        border: 1px solid var(--si-theme-primary);
+                        color: var(--si-common-white);
+                    }
+                    i{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

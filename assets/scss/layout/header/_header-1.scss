@@ -1,0 +1,140 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*   3.1 Header Style
+/*----------------------------------------*/
+
+.header-transparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+}
+.header-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+}
+.si-header{
+    &-ptb{
+        @media #{$lg,$md,$xs}{
+            padding: 10px 0;
+        }
+    }
+    &-menu{
+        & > nav{
+            & > ul{
+                & > li{
+                    margin: 0 18px;
+                    list-style-type: none;
+                    display: inline-block;
+                    @media #{$xl}{
+                        margin: 0 15px;
+                    }
+                    & > a{
+                        padding: 50px 0;
+                        font-weight: 500;
+                        font-size: 18px;
+                        display: inline-block;
+                        color: var(--si-common-black);
+                    }
+                }
+            }
+        }
+    }
+    &-lang{
+        & a{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1;
+            display: inline-block;
+            &.active{
+                color: var(--si-theme-primary);
+            }
+            &:not(:first-child){
+                margin-left: 10px;
+            }
+            &:hover{
+                color: var(--si-theme-primary);
+            }
+        }
+    }
+    &-box{  
+        @media #{$x3l,$xxl}{
+            padding-right: 30px;
+        }
+        @media #{$xl}{
+            padding-right: 0px;
+        }
+    }
+    &-logo{
+        & img {
+            max-width: inherit;
+        }
+        @media #{$x3l}{
+            padding-left: 30px;
+        }
+        @media #{$xl}{
+            padding-right: 25px;
+        }
+        @media #{$lg,$md,$xs}{
+            padding: 10px 0;
+        }
+    }
+    &-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$lg,$md,$sm}{
+            justify-content: right;
+            gap: 20px;
+        }
+        @media #{$xs}{
+            display: block;
+            text-align: right;
+        }
+    }
+    &-bar{
+        & button{
+            color: var(--si-common-white);
+            border: 1px solid var(--si-border-1);
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            place-content: center;
+            &:hover{
+                & span {
+                    animation: bar_anim 0.8s cubic-bezier(0.44, 1.1, 0.53, 0.99) 1 forwards;
+                }
+            }
+        }
+    }
+    &-social{
+        @media #{$xl,$lg}{
+            display: none !important;
+        }
+        a{
+            margin-right: 15px;
+        }
+    }
+}
+.si-header-white{
+    & .si-header-menu > nav > ul > li > a{
+        color: var(--si-common-white);
+    }
+    & .si-header-dropdown nav ul li.has-dropdown::after{
+        color: var(--si-common-white);
+    }
+    & .si-header-search-title{
+        color: var(--si-common-white);
+    }
+    & .si-header-bar button{
+        border: 1px solid var(--si-border-9);
+    }
+    &.header-sticky{
+        background: var(--si-common-black);
+    }
+}

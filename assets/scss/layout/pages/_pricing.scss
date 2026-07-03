@@ -1,0 +1,220 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  2.8 Pricing CSS
+/*----------------------------------------*/
+
+.si-pricing{
+    &-area{
+        position: relative;
+    }
+    &-button{
+        span{
+            font-weight: 600;
+            font-size: 18px;
+            background: var(--si-common-white);
+            color: var(--si-common-black);
+            padding: 25px 40px 24px 41px;
+            cursor: pointer;
+            @media #{$lg2}{
+                padding: 17px 25px 17px 25px;
+            }
+        }
+    }
+    &-number{
+        &-1{
+            font-weight: 500;
+            font-size: 18px;
+            color: var(--si-common-text-body);
+            font-family: var(--si-ff-body);
+            margin-right: 8px;
+        }
+        &-2{
+            font-weight: 600;
+            font-size: 80px;
+            margin-left: -15px;
+            @media #{$lg2}{
+                font-size: 55px;
+            }
+        }
+        h2{
+            strong{
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--si-common-text-body);
+                font-family: var(--si-ff-body);
+                margin-left: -12px;
+            }
+        }
+        h3{
+            display: inline-block;
+            color: var(--si-theme-primary);
+            border: 1px solid rgba(18, 18, 18, 0.15);
+            border-radius: 10px;
+            padding: 8px 35px 12px 35px;
+            margin-top: -15px;
+            @media #{$xxl,$xl,$lg,$lg2}{
+                margin-top: 11px;
+            }
+            @media #{$lg,$lg2}{
+                padding: 5px 17px 7px 17px;
+            }
+        }
+        a{
+            display: block;
+            margin-top: 46px;
+            @media (max-width:1600px){
+            display: none;
+        }
+        }
+    }
+    &-right{
+        display: flex;
+        align-items: center;
+        gap: 91px;
+        background: var(--si-common-white);
+        padding: 24px 0 32px 51px;
+        margin-left: -44px;
+        width: 100%;
+        @media (max-width:1600px){
+            display: block;
+        }
+        @media #{$xl,$lg,$lg2}{
+            margin-left: 0px;
+        }
+        @media #{$lg2}{
+            margin-top: 45px;
+        }
+        @media #{$xs}{
+            padding: 21px 0 21px 10px;
+        }
+    }
+    &-list{
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 18px;
+        @media #{$xxl}{
+            margin-left: -20px;
+        }
+        ul{
+            li{
+                font-weight: 600;
+                font-size: 18px;
+                list-style: none;
+                margin-bottom: 29px;
+                position: relative;
+                img{
+                    margin-right: 17px;
+                }
+                @media #{$lg,$lg2}{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &-color2{
+            color: var(--si-common-gray-2);
+        }
+    }
+    &-list ul li::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -16px;
+        width: 320px;
+        height: 1px;
+        background: var(--si-border-7);
+        @media (max-width:1600px){
+            display: none;
+        }
+    }
+    &-list ul li:last-child::before{
+        display: none;
+    }
+    &-shape{
+        position: absolute;
+        bottom: 8.3%;
+        left: 26.6%;
+        @media (max-width:1500px){
+            display: none;
+        }
+    }
+    &-shape2{
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        @media (max-width:1800px){
+            display: none;
+        }
+    }
+}
+.si-list-2 {
+	margin-left: 33px;
+}
+.tab-btn .annual_tab_title .active .si-list-2 {
+	margin-left: 0px;
+}
+.si-right-2{
+    transform: scale(1.1);
+    @media #{$xs}{
+        transform: scale(1);
+    }
+}
+.si-number-2{
+    h2{
+        color: var(--si-common-white);
+        .si-pricing-number-1{
+            color: var(--si-common-white);
+        }
+        strong{
+            color: var(--si-common-white);
+        }
+    }
+    h3{
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(7.5px);
+        color: var(--si-common-white);
+        font-size: 24px;
+    }
+}
+.si-list-color{
+    ul li{
+        color: var(--si-common-white);
+    }
+    .si-pricing-list-color2{
+        color: var(--si-common-gray-2);
+    }
+}
+.si-pricing-number .tab-annual-price{
+    display: none;
+}
+.si-pricing-number .change-subs-duration .tab-annual-price{
+    display: flex;
+}
+.si-pricing-number.change-subs-duration .tab-monthly-price{
+    display: none;
+}
+.si-pricing-button .pricing-tab-switcher.active::before {
+    left: calc(100% - 28px);
+}
+.si-pricing-button .pricing-tab-switcher::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    width: 26px;
+    border-radius: 50%;
+    background: var(--si-common-white);
+    transition: .3s;
+}
+.si-pricing-button .pricing-tab-switcher.active::before {
+    left: calc(100% - 28px);
+}
+.tab-btn {
+    cursor: pointer;
+}
+.tab-btn.active {
+    color: var(--si-common-white);
+    background: var(--si-theme-primary);
+}

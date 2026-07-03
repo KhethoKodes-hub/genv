@@ -1,0 +1,24 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  1.2 Banner Css
+/*----------------------------------------*/
+
+.si-banner{
+    &-area{
+        @media #{$xs}{
+            display: none;
+        }
+    }
+    &-img{
+        overflow: hidden;
+        height: 650px;
+        @media #{$xxl,$xl}{
+            height: 440px;
+        }
+        @media #{$lg,$md,$xs}{
+            height: 350px;
+        }
+    }
+}
+

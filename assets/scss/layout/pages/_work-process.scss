@@ -1,0 +1,211 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  2.6 Work Process css
+/*----------------------------------------*/
+
+.si-process{
+    &-box{
+        position: relative;
+        background: #fff;
+        padding: 30px;
+        overflow: hidden;
+        border-radius: 15px;
+        z-index: 1;
+        @media #{$lg2}{
+            margin-bottom: 30px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: url(../img/process/box-bg.jpg);
+            z-index: -1;
+            @include si-transition(.3s);
+        }
+        &:hover::before{
+            height: 100%;
+        }
+        &-wrapper{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 26px;
+            height: 38px;
+            background: var(--si-border-10);
+            &::before{
+                inset: calc(100% - 2em) 0 0 -1em;
+                border-bottom-right-radius: 1.15em;
+                box-shadow: 0.3em 0.3em 0 0.2em var(--si-border-10);
+                transition: 1s ease;
+                position: absolute;
+                content: "";
+                width: 1.25em;
+                height: 1.56em;
+                background: transparent;
+                transform: rotate(-44deg);
+            }
+            &::after {
+                inset: 0.1em 0 0 1.2em;
+                border-bottom-right-radius: 1.25em;
+                box-shadow: 0.3em 0.3em 0 0.2em var(--si-border-10);
+                transition: 1s ease;
+                position: absolute;
+                content: "";
+                width: 1.25em;
+                height: 1.6em;
+                background: transparent;
+                transform: rotate(140deg);
+            }
+        }
+    }
+    &-text{
+        display: flex;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        background: var(--si-common-white);
+        border: 8px solid var(--si-border-10);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        @include si-transition(.3s);
+    }
+    &-number{
+        font-weight: 600;
+        font-size: 30px;
+        color: var(--si-common-black);
+        @include si-transition(.3s);
+    }
+    &-content{
+        h3{
+            padding: 32px 0 12px;
+            @include si-transition(.3s);
+            @media #{$d-xxl-down}{
+                font-size: 25px;
+            }
+        }
+        P{
+            @include si-transition(.3s);
+        }
+    }
+    &-list{
+        display: inline-grid;
+        text-align: left;
+        padding-top: 12px;
+        span{
+            i{
+                margin-right: 10px;
+                font-family: sans-serif;
+            }
+            display: block;
+            font-weight: 500;
+            color: var(--si-common-black);
+            font-size: 20px;
+            padding-bottom: 10px;
+            @include si-transition(.3s);
+        }
+    }
+    &-box:hover &-text{
+        background: var(--si-theme-primary);
+    }
+    &-box:hover &-number,
+    &-box:hover &-content h3,
+    &-box:hover &-content p,
+    &-box:hover &-list span{
+        color: var(--si-common-white);
+    }
+    &-shape{
+        display: flex;
+        justify-content: center;
+        @media #{$d-xxl-down}{
+            display: none;
+        }
+    }
+    &-area .color2{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 26px;
+        height: 38px;
+        background: #F7F6FB !important;
+        &::before{
+            inset: calc(100% - 2em) 0 0 -1em;
+            border-bottom-right-radius: 1.15em;
+            box-shadow: 0.3em 0.3em 0 0.2em #F7F6FB;
+            transition: 1s ease;
+            position: absolute;
+            content: "";
+            width: 1.25em;
+            height: 1.56em;
+            background: transparent;
+            transform: rotate(-44deg);
+        }
+        &::after {
+            inset: 0.1em 0 0 1.2em;
+            border-bottom-right-radius: 1.25em;
+            box-shadow: 0.3em 0.3em 0 0.2em #F7F6FB;
+            transition: 1s ease;
+            position: absolute;
+            content: "";
+            width: 1.25em;
+            height: 1.6em;
+            background: transparent;
+            transform: rotate(140deg);
+        }
+    }
+    &-area .common-color2{
+        border-color: #F7F6FB;
+    }
+    &-area .color3{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 26px;
+        height: 38px;
+        background: #F9F9F9 !important;
+        &::before{
+            inset: calc(100% - 2em) 0 0 -1em;
+            border-bottom-right-radius: 1.15em;
+            box-shadow: 0.3em 0.3em 0 0.2em #F9F9F9;
+            transition: 1s ease;
+            position: absolute;
+            content: "";
+            width: 1.25em;
+            height: 1.56em;
+            background: transparent;
+            transform: rotate(-44deg);
+        }
+        &::after {
+            inset: 0.1em 0 0 1.2em;
+            border-bottom-right-radius: 1.25em;
+            box-shadow: 0.3em 0.3em 0 0.2em #F9F9F9;
+            transition: 1s ease;
+            position: absolute;
+            content: "";
+            width: 1.25em;
+            height: 1.6em;
+            background: transparent;
+            transform: rotate(140deg);
+        }
+    }
+    &-area .common-color3{
+        border-color: #F9F9F9;
+    }
+    &-shape-2{
+        position: absolute;
+        top: 13%;
+        left: 30px;
+        -webkit-animation: transform 5s infinite linear;
+        animation: transform 5s infinite linear;
+        @media #{$xxl,$xl,$lg,$lg2}{
+            display: none;
+        }
+    }
+}

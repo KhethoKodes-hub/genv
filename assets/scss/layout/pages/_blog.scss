@@ -1,0 +1,55 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  1.9 Blog css
+/*----------------------------------------*/
+
+.si-blog{
+    &-area{
+        padding-top: 185px;
+        @media #{$md,$xs}{
+            padding-top: 70px;
+        }
+        & .si-circle-btn-box{
+            margin-top: -35px;
+            @media #{$xl,$lg,$md,$xs}{
+                margin-bottom: 20px;
+            }
+        }
+        & .si-section-title{
+            padding-bottom: 70px;
+        }
+    }
+    &-box{
+        @media #{$md,$xs}{
+            margin-bottom: 30px;
+        }
+    }
+    &-meta{
+        padding-top: 28px;
+        padding-bottom: 9px;
+        font-size: 18px;
+        color: var(--si-common-gray-2);
+    }
+    &-main-title{
+        margin-bottom: 22px;
+    }
+    &-img{
+        overflow: hidden;
+       img{
+        transition: .4s;
+        transform: scale(1.04);
+       }
+    }
+    &-box:hover &-img img{
+        transform: scale(1.04) translateX(8px);
+    }
+    &-shape {
+        position: absolute;
+        bottom: 5%;
+        left: 50px;
+        @media (max-width:1700px){
+            display: none;
+        }
+    }
+}

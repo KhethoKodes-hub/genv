@@ -1,0 +1,754 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GenV | Bringing Humanity to AI</title>
+    <meta name="description" content="GenV is a South African consulting firm combining industrial psychology and data science to help businesses with talent recruitment, data analytics, and AI-driven decision-making.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/atropos.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- CSS here -->
+
+</head>
+
+<body class="si-magic-cursor">
+
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-black-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+
+    <!-- back to top start -->
+    <div class="back-to-top-wrapper">
+        <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+    <!-- back to top end -->
+
+    <!-- header area start -->
+    <div id="header-sticky" class="si-header-area header-transparent si-header-ptb si-header-lang">
+        <div class="container container-1650">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-6">
+                    <div class="si-header-logo">
+                        <a href="index.html">
+                            <img data-width="167" class="logo-black" src="assets/img/logo/logo-black.png" alt="GenV">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-6 col-6">
+                    <div class="si-header-right">
+                        <div class="si-header-box d-none d-xl-block">
+                            <div class="si-header-menu si-header-dropdown dropdown-white-bg">
+                                <nav class="si-mobile-menu-active">
+                                    <ul>
+                                        <li> <a href="index.html">Home</a> </li>
+                                        <li> <a href="about-us.html">About Us</a> </li>
+                                        <li class="has-dropdown">
+                                            <a href="service.html">Services</a>
+                                            <ul class="si-submenu submenu">
+                                                <li><a href="service.html">Talent</a></li>
+                                                <li><a href="service.html">Data Analytics</a></li>
+                                                <li><a href="service.html">Consulting</a></li>
+                                            </ul>
+                                        </li>
+                                        <!--<li class="has-dropdown">
+                                            <a href="#team">Our Team</a>
+                                            <ul class="si-submenu submenu">
+                                                <li><a href="#team">Vuyiswa Mataka</a></li>
+                                                <li><a href="#team">Gerald Bezuidenhout</a></li>
+                                            </ul>
+                                        </li>-->
+                                        <li> <a href="contact.html">Contact</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="si-header-social d-none d-xl-block">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="5" r="1" fill="currentColor"/></svg>
+                            </a>
+                            <a href="#">
+                                <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
+                            </a>
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="7" width="3" height="11" fill="currentColor"/><circle cx="3.5" cy="3" r="1.8" fill="currentColor"/><path d="M8 7h3v2c1-1.6 2.6-2.3 4.4-2.3 3.1 0 4.6 2 4.6 5.4V18h-3v-5.3c0-1.7-.6-2.7-2-2.7-1.5 0-2.4 1-2.8 2v6h-3V7z" fill="currentColor"/></svg>
+                            </a>
+                            <a href="#">
+                                <svg width="21" height="21" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+                            </a>
+                        </div>
+                        <!--<div class="si-header-search-box d-none d-md-block">
+                            <button class="si-header-search si-search-open-btn">
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.0004 18.9999L14.6504 14.6499M17.0001 9.00004C17.0001 13.4183 13.4183 17.0001 9.00004 17.0001C4.58174 17.0001 1 13.4183 1 9.00004C1 4.58174 4.58174 1 9.00004 1C13.4183 1 17.0001 4.58174 17.0001 9.00004Z" stroke="#191919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="si-header-search-title">Search here</span>
+                            </button>
+                        </div>-->
+                        <div class="si-header-bar">
+                            <button class="si-offcanvas-open-btn">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header area end -->
+
+    <!-- si-offcanvus-area-start -->
+    <div class="si-offcanvas-area">
+        <div class="si-offcanvas-wrapper">
+            <div class="si-offcanvas-top d-flex align-items-center justify-content-between">
+                <div class="si-offcanvas-logo">
+                    <a href="index.html">
+                        <img class="logo-1" data-width="120" src="assets/img/logo/logo-black.png" alt="GenV">
+                        <img class="logo-2" data-width="120" src="assets/img/logo/logo-white.png" alt="GenV">
+                    </a>
+                </div>
+                <div class="si-offcanvas-close">
+                    <button class="si-offcanvas-close-btn">
+                        <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="si-offcanvas-main">
+                <div class="si-offcanvas-content d-none d-xl-block">
+                    <h3 class="si-offcanvas-title">About Us</h3>
+                    <p>GenV is a South African consulting firm bringing humanity to AI, combining industrial psychology and data science to help businesses with talent, analytics, and AI-driven decisions.</p>
+                </div>
+                <div class="si-offcanvas-menu d-xl-none">
+                    <nav></nav>
+                </div>
+                <div class="si-offcanvas-gallery d-none d-xl-block">
+                    <div class="row gx-2">
+                        <div class="col-md-3 col-3">
+                            <div class="si-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="assets/img/offcanvas/offcanvas-1.jpg"><img src="assets/img/offcanvas/offcanvas-1.jpg" alt="image"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="si-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="assets/img/offcanvas/offcanvas-2.jpg"><img src="assets/img/offcanvas/offcanvas-2.jpg" alt="image"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="si-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="assets/img/offcanvas/offcanvas-3.jpg"><img src="assets/img/offcanvas/offcanvas-3.jpg" alt="image"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-3">
+                            <div class="si-offcanvas-gallery-img fix">
+                                <a class="popup-image" href="assets/img/offcanvas/offcanvas-4.jpg"><img src="assets/img/offcanvas/offcanvas-4.jpg" alt="image"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="si-offcanvas-contact">
+                    <h3 class="si-offcanvas-title sm">Information</h3>
+                    <ul>
+                        <li><a href="#">Contact via website form</a></li>
+                        <li><a href="https://genv.tech/" target="_blank">genv.tech</a></li>
+                        <li><a href="#">South Africa</a></li>
+                    </ul>
+                </div>
+                <div class="si-offcanvas-social">
+                    <h3 class="si-offcanvas-title sm">Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.25 1.5H4.75C2.95507 1.5 1.5 2.95507 1.5 4.75V11.25C1.5 13.0449 2.95507 14.5 4.75 14.5H11.25C13.0449 14.5 14.5 13.0449 14.5 11.25V4.75C14.5 2.95507 13.0449 1.5 11.25 1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.6016 7.5907C10.6818 8.13166 10.5894 8.68414 10.3375 9.16955C10.0856 9.65497 9.68711 10.0486 9.19862 10.2945C8.71014 10.5404 8.15656 10.6259 7.61663 10.5391C7.0767 10.4522 6.57791 10.1972 6.19121 9.81055C5.80451 9.42385 5.54959 8.92506 5.46271 8.38513C5.37583 7.8452 5.46141 7.29163 5.70728 6.80314C5.95315 6.31465 6.34679 5.91613 6.83221 5.66425C7.31763 5.41238 7.87011 5.31998 8.41107 5.4002C8.96287 5.48202 9.47372 5.73915 9.86817 6.1336C10.2626 6.52804 10.5197 7.0389 10.6016 7.5907Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.5742 4.42578H11.5842" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.75 13H5.25C3 13 1.5 11.5 1.5 9.25V4.75C1.5 2.5 3 1 5.25 1H12.75C15 1 16.5 2.5 16.5 4.75V9.25C16.5 11.5 15 13 12.75 13Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.70676 5.14837L10.8006 6.40465C11.5543 6.90716 11.5543 7.66093 10.8006 8.16344L8.70676 9.41972C7.86923 9.92224 7.19922 9.50348 7.19922 8.5822V6.06964C7.19922 4.98086 7.86923 4.64585 8.70676 5.14837Z" fill="currentColor" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- si-offcanvus-area-end -->
+
+    <!-- search area start -->
+    <div class="si-search-area p-relative">
+        <div class="si-search-close">
+            <button class="si-search-close-btn">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="path-1" d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path class="path-2" d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="container container-1230">
+            <div class="row">
+                <div class="si-search-wrapper">
+                    <div class="col-lg-8">
+                        <div class="si-search-content">
+                            <div class="search p-relative">
+                                <input type="text" class="search-input" placeholder="Search">
+                                <button class="si-search-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M18.0508 18.05L23.0009 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M20.8004 10.9C20.8004 5.43237 16.3679 1 10.9002 1C5.43246 1 1 5.43237 1 10.9C1 16.3676 5.43246 20.7999 10.9002 20.7999C16.3679 20.7999 20.8004 16.3676 20.8004 10.9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- search area end -->
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <main>
+
+                <!-- hero area start -->
+                <div id="home" class="si-hero-area p-relative si-hero-ptb p-relative fix z-index-1 si-background"  data-background="assets/img/hero/hero-bg-1.jpg">
+                    <div class="container container-1650">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-12">
+                                <div class="si-hero-thumb">
+                                    <img src="assets/Genassets/gen1.jpg" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-xl-8">
+                                <div class="si-hero-title-box">
+                                    <p class="si-hero-desc">
+                                        GenV sits at the intersection of psychology <br class="d-none d-xxl-block"> and mathematics, helping businesses make <br class="d-none d-xxl-block"> data-driven decisions with AI ..
+                                    </p>
+                                    <h1 class="si-hero-title si-char-animation">
+                                        <span>Bringing</span> <br>
+                                        <span class="si-hero-title-light-text">Humanity to AI</span>
+                                    </h1>
+                                    <div class="si-hero-bottom d-flex align-items-center">
+                                        <a href="#services">
+                                            <svg width="183" height="183" viewBox="0 0 183 183" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="91.5" cy="91.5" r="90" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M60 123L123 60M123 60H80M123 60V103" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </a>
+                                        <p> Talent. Data Analytics. <br class="d-none d-xxl-block"> Consulting. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="si-hero-shape1" src="assets/img/hero/shape-1.jpg" alt="image">
+                    <img class="si-hero-shape2 si-zoom-in-out" src="assets/img/hero/shape-2.jpg" alt="image">
+                </div>
+                <!-- hero area end -->
+
+                <!-- banner area start -->
+                <div class="si-banner-area">
+                    <div class="si-banner-img">
+                        <img class="w-100" data-speed=".7" src="assets/Genassets/gen4.jpg" alt="image">
+                    </div>
+                </div>
+                <!-- banner area end -->
+
+                <!-- about us start -->
+                 <div id="about" class="si-about-area pt-130 z-index-1 pb-150 si-background" data-background="assets/img/about-us/bg.jpg">
+                    <div class="container container-1650">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="si-section-title">
+                                    <h2 class="si-text-revel-anim space">We bridge the gap between <br class="d-none d-xxl-block"> psychology and data to help <br class="d-none d-xxl-block"> businesses grow.</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                <div class="si-about-img p-relative">
+                                    <img src="assets/Genassets/gen3.jpg" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                <div class="si-about-content">
+                                    <div class="row gx-24">
+                                        <div class="col-md-12">
+                                            <p class="si-about-desc">GenV is a South African consulting firm whose tagline is "Bringing humanity to AI." We position ourselves at the intersection <br class="d-none d-xxl-block"> of psychology and mathematics, offering recruitment, market research and data science solutions aimed at businesses <br class="d-none d-xxl-block"> wanting data-driven decisions using AI tools ...</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="si-about-box">
+                                                <div class="si-about-box-content d-flex align-items-center justify-content-between">
+                                                    <span class="p-relative">Managing <br class="d-none d-xxl-block"> Director</span>
+                                                    <h2>VM</h2>
+                                                </div>
+                                                <div class="si-about-box-desc">
+                                                    <p>Vuyiswa Mataka holds a BCom in Industrial Psychology from the University of Pretoria, with a background in technical recruitment ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="si-about-box">
+                                                <div class="si-about-box-content d-flex align-items-center justify-content-between">
+                                                    <span class="p-relative">Technical <br class="d-none d-xxl-block"> Director</span>
+                                                    <h2>GB</h2>
+                                                </div>
+                                                <div class="si-about-box-desc">
+                                                    <p>Gerald Bezuidenhout holds a BSc in Mathematical Statistics from the University of Pretoria, and came up through fintech ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="si-about-shape">
+                        <img src="assets/img/about-us/shape.png" alt="">
+                    </div>
+                 </div>
+                <!-- about us end -->
+
+                <!-- our services start -->
+                 <div id="services" class="si-service-area pt-150 pb-150 si-background" data-background="assets/img/service/service-bg.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-12">
+                                <div class="si-section-title">
+                                    <span> Our Services </span>
+                                    <h2 class="si-text-revel-anim"> Smart Solutions for your <br class="d-none d-xxl-block"> Business </h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="si-circle-btn-box text-md-end si_fade_anim" data-delay=".8" data-fade-from="top" data-ease="bounce">
+                                    <div class="si-circle-btn-wrap d-inline-block">
+                                        <a class="si-circle-btn btn-item" href="#contact">
+                                            <span class="d-block">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14L14 4M14 4H6M14 4V12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                            </span>
+                                            <span class="si-circle-btn-title">Get In Touch</span>
+                                            <i class="si-circle-btn-dot"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-24">
+                            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                                <div class="si-service-box p-relative">
+                                    <h3 class="si-service-title"> <a class="underline-black" href="#contact">Talent </a></h3>
+                                    <p class="si-service-desc">Recruitment and technical hiring, helping <br class="d-none d-xxl-block"> clients find talent and optimize their ..</p>
+                                    <div class="si-service-border-shape">
+                                        <span>
+                                            <svg width="424" height="278" viewBox="0 0 424 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="228" cy="261" r="260.5" stroke="#121212" stroke-dasharray="10 10"/>
+                                            </svg>
+                                        </span>
+                                        <h4 class="si-service-img-text">T</h4>
+                                    </div>
+                                    <div class="si-service-list">
+                                        <ul>
+                                            <li><span>+</span> Technical Recruitment </li>
+                                            <li><span>+</span> Hiring Strategy </li>
+                                            <li><span>+</span> Fintech & Financial Placements </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                                <div class="si-service-box p-relative">
+                                    <h3 class="si-service-title"> <a class="underline-black" href="#contact">Data Analytics </a> </h3>
+                                    <p class="si-service-desc">Advanced analytics and modelling to pull <br class="d-none d-xxl-block"> insights from complex data ..</p>
+                                    <div class="si-service-border-shape">
+                                        <span>
+                                            <svg width="424" height="278" viewBox="0 0 424 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="228" cy="261" r="260.5" stroke="#121212" stroke-dasharray="10 10"/>
+                                            </svg>
+                                        </span>
+                                        <h4 class="si-service-img-text-2">D</h4>
+                                    </div>
+                                    <div class="si-service-list">
+                                        <ul>
+                                            <li><span>+</span> Advanced Modelling </li>
+                                            <li><span>+</span> Market Research </li>
+                                            <li><span>+</span> Data Science </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                                <div class="si-service-box p-relative">
+                                    <h3 class="si-service-title"> <a class="underline-black" href="#contact">Consulting </a> </h3>
+                                    <p class="si-service-desc">Customized solutions built around each <br class="d-none d-xxl-block"> client's specific needs ..</p>
+                                    <div class="si-service-border-shape">
+                                        <span>
+                                            <svg width="424" height="278" viewBox="0 0 424 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="228" cy="261" r="260.5" stroke="#121212" stroke-dasharray="10 10"/>
+                                            </svg>
+                                        </span>
+                                        <h4 class="si-service-img-text-3">C</h4>
+                                    </div>
+                                    <div class="si-service-list">
+                                        <ul>
+                                            <li><span>+</span> Custom Client Solutions </li>
+                                            <li><span>+</span> AI-Driven Decision Making </li>
+                                            <li><span>+</span> Strategic Advisory </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <!-- our services end -->
+
+                 <!-- team area start -->
+                  <div id="team" class="si-team-area pt-150 pb-150 si-background" data-background="assets/img/team/team-bg.jpg">
+                    <div class="container">
+                        <div class="row gx-24">
+                            <div class="col-md-12">
+                                <div class="si-section-title text-center si-section-title-white mb-10">
+                                    <span> Leadership </span>
+                                    <h2 class="si-text-revel-anim"> Meet Our Directors </h2>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                                <div class="si-team-box p-relative fix">
+                                    <div class="si-team-content z-index-1">
+                                        <span class="si-team-designation"> Managing Director </span>
+                                        <h3 class="si-team-title"> <a class="underline-black" href="#team"> Vuyiswa Mataka </a></h3>
+                                    </div>
+                                    <div class="si-team-thumb z-index-1 text-end pt-30">
+                                        <a href="#team"><img src="assets/Genassets/vuyi.png" alt="image"></a>
+                                    </div>
+                                    <div class="si-team-shape">
+                                        <img src="assets/Genassets/vuyi.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                                <div class="si-team-box p-relative fix">
+                                    <div class="si-team-content z-index-1">
+                                        <span class="si-team-designation"> Technical Director </span>
+                                        <h3 class="si-team-title"> <a class="underline-black" href="#team"> Gerald Bezuidenhout </a></h3>
+                                    </div>
+                                    <div class="si-team-thumb z-index-1 text-end pt-30">
+                                        <a href="#team"><img src="assets/Genassets/gerald.png" alt="image"></a>
+                                    </div>
+                                    <div class="si-team-shape">
+                                        <img src="assets/Genassets/gerald.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                 <!-- team area end -->
+
+                 <!-- faq area start -->
+                  <div class="si-faq-area si-background" data-background="assets/img/faq/bg.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="si-section-title">
+                                    <span> Our Faq's </span>
+                                    <h2 class="si-text-revel-anim"> Frequently Asked Questions </h2>
+                                </div>
+                                <div class="si-faq-box">
+                                    <div class="si-faq-accordion-wrap">
+                                        <div class="accordion" id="accordionExample1">
+                                            <div class="accordion-items">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                                        <span class="si-faq-number">01</span>
+                                                        What does GenV do?
+                                                        <span class="accordion-icon"></span>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
+                                                    <div class="accordion-body">
+                                                        <p>
+                                                            GenV is a South African consulting firm combining industrial psychology and data science to help businesses with talent recruitment, data analytics, and AI-driven decision-making.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-items">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                                        <span class="si-faq-number">02</span>
+                                                        Which services does GenV offer?
+                                                        <span class="accordion-icon"></span>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                                    <div class="accordion-body">
+                                                        <p>
+                                                            GenV offers three core services: Talent (recruitment and technical hiring), Data Analytics (advanced analytics and modelling), and Consulting (customized solutions for client-specific needs).
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-items">
+                                                <h3 class="accordion-header">
+                                                    <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                                        <span class="si-faq-number">03</span>
+                                                        Who leads GenV?
+                                                        <span class="accordion-icon"></span>
+                                                    </button>
+                                                </h3>
+                                                <div id="collapseThree3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                                                    <div class="accordion-body">
+                                                        <p>
+                                                            GenV is led by Managing Director Vuyiswa Mataka, who holds a BCom in Industrial Psychology from the University of Pretoria, and Technical Director Gerald Bezuidenhout, who holds a BSc in Mathematical Statistics from the University of Pretoria.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                 <!-- faq area end -->
+
+                 <!-- contact area start -->
+                  <div id="contact" class="si-client-area">
+                        <div class="container">
+                            <div class="si-client-header">
+                                <div class="si-section-title">
+                                    <span> Get In Touch </span>
+                                    <h2 class="si-text-revel-anim"> Bringing Humanity to AI </h2>
+                                </div>
+                                <div class="si-section-title">
+                                    <p>Reach out through the contact form on our website to discuss talent, data <br class="d-none d-lg-block"> analytics, or consulting needs for your business ...</p>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                 <!-- contact area end -->
+
+            </main>
+
+            <!-- footer area start -->
+            <div class="si-footer-area p-relative pt-200 pb-35 si-background" data-background="assets/img/footer/bg.jpg">
+                <!-- footer logo 
+                 <div class="si-footer-logo">
+                    <a href="index.html"><img src="assets/img/logo/" alt="GenV"></a>
+                 </div>
+                 footer logo -->
+                <!-- marquee area start -->
+                <div class="si-marquee-area pb-80">
+                    <div class="swiper si-marquee-active">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="si-marquee-item">
+                                    <span>
+                                        Let's <span class="si-marquee-textstoke">Contact</span>
+                                    </span>
+                                    <img src="assets/img/marquee/shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="si-marquee-item">
+                                    <span> 
+                                        <span class="si-marquee-colortext">Let's</span> <span class="si-marquee-textstoke">Contact</span>
+                                    </span>
+                                    <img src="assets/img/marquee/shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="si-marquee-item">
+                                    <span>
+                                        Let's <span class="si-marquee-textstoke">Contact</span>
+                                    </span>
+                                    <img src="assets/img/marquee/shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="si-marquee-item">
+                                    <span> 
+                                        <span class="si-marquee-colortext">Let's</span> <span class="si-marquee-textstoke">Contact</span>
+                                    </span>
+                                    <img src="assets/img/marquee/shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="si-marquee-item">
+                                    <span>
+                                        Let's <span class="si-marquee-textstoke">Contact</span>
+                                    </span>
+                                    <img src="assets/img/marquee/shape.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="si-marquee-item">
+                                    <span> 
+                                        <span class="si-marquee-colortext">Let's</span> <span class="si-marquee-textstoke">Contact</span>
+                                    </span>
+                                    <img src="assets/img/marquee/shape.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- marquee area end -->                
+                <div class="container container-1650">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-4 col-lg-3 col-md-6">
+                            <div class="si-footer-widget si-footer-col-1 si_fade_anim" data-delay=".3">
+                                <div class="si-footer-widget-content">
+                                    <p>
+                                        GenV brings humanity to AI, combining <br class="d-none d-lg-block"> industrial psychology and data science <br class="d-none d-lg-block"> to help businesses make smarter ..
+                                    </p>
+                                    <div class="si-footer-subscribe-form p-relative pt-25">
+                                        <form action="#">
+                                            <input type="email" name="email" placeholder="Enter your email">
+                                            <button type="submit" class="subscribe-btn">
+                                                <img src="assets/img/footer/icon.svg" alt="">
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="si-footer-widget si-footer-col-2 si_fade_anim" data-delay=".5">
+                                <h3 class="si-footer-widget-title text-white mb-45">Useful Links</h3>
+                                <div class="si-footer-widget-menu">
+                                    <ul>
+                                        <li><a href="#about">About Us</a></li>
+                                        <li><a href="#services">Talent</a></li>
+                                        <li><a href="#services">Data Analytics</a></li>
+                                        <li><a href="#services">Consulting</a></li>
+                                        <li><a href="#team">Our Team</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="si-footer-widget si-footer-col-3 si_fade_anim" data-delay=".5">
+                                <h3 class="si-footer-widget-title text-white mb-45">Follow Us</h3>
+                                <div class="si-footer-widget-menu">
+                                    <ul>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Twitter</a></li>
+                                        <li><a href="#">Instagram</a></li>
+                                        <li><a href="#">Linkedin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6">
+                            <div class="si-footer-widget si-footer-col-4 si_fade_anim" data-delay=".5">
+                                <h3 class="si-footer-widget-title text-white mb-45">Leadership</h3>
+                                <div class="si-footer-contact-list">
+                                    <ul>
+                                        <li> <span> Managing Director </span> <p> Vuyiswa Mataka </p> </li>
+                                        <li> <span> Technical Director </span> <p> Gerald Bezuidenhout </p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="si-copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="si-copyright-content text-center">
+                                <p class="text-white">© 2026 GenV. Bringing Humanity to AI. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer area end -->
+
+            
+        </div>
+    </div>
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/scroll-magic.js"></script>
+    <script src="assets/js/hover-effect.umd.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/parallax-slider.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/Observer.min.js"></script>
+    <script src="assets/js/splitting.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/atropos.js"></script>
+    <script src="assets/js/slider-active.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/si-cursor.js"></script>
+    <!-- JS here -->
+
+</body>
+
+</html>

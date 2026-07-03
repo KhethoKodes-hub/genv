@@ -1,0 +1,103 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  1.6 Team css
+/*----------------------------------------*/
+
+.si-team{
+    &-box{
+        background: var(--si-common-black-2);
+        border: 1px solid var(--si-border-6);
+        border-radius: 10px;
+        padding: 33px 38px 0 38px;
+        @include si-transition(.3s);
+        &:hover{
+            background: var(--si-theme-primary);
+        }
+        @media (max-width:991px){
+            margin-bottom: 30px;
+        }
+    }
+    &-box:hover &-title, &-box:hover &-designation{
+        color: var(--si-common-black);
+    }
+    &-title{
+        color: var(--si-common-white);
+        @include si-transition(.2s);
+    }
+    &-designation{
+        color: var(--si-common-gray);
+        @include si-transition(.3s);
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    &-thumb a img{
+    }
+    &-shape{
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        img{
+            opacity: 0.1;
+            @include si-transition(.3s);
+        }
+    }
+    &-box:hover &-shape img{
+        opacity:1;        
+    }
+}
+// Style Two
+.si-team-2{
+    &-area{
+        position: relative;
+    }
+    &-thumb img{
+        transition: 0.6s;
+        @media #{$xs}{
+            width: 100%;
+        }
+    }
+    &-text{
+        margin-top: 25px;
+        text-align: center;
+        span{
+            position: relative;
+            top: -4px;
+        }
+    }
+    &-shape{
+        position: absolute;
+        right: 3.7%;
+        bottom: 10.6%;
+    }
+}
+// Team Three
+.si-team-3{
+    &-area{
+        padding-top: 190px;
+        padding-bottom: 150px;
+        @media #{$md,$xs}{
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+    &-area .si-circle-btn-box {
+        margin-top: -49px;
+        @media #{$md,$xs}{
+            margin-top: 0;
+        }
+    }
+    &-box{
+        background: #F6F0F8;
+        & .si-team-shape img{
+            opacity: 1 !important;
+        }
+        & .si-team-designation{
+            color: #554D4D;
+        }
+        & .si-team-title{
+            color: var(--si-common-black);
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.1 Section Title
+/*----------------------------------------*/
+
+.si-section-title{
+    padding-bottom: 60px;
+    @media #{$xs}{
+        padding-bottom: 30px;
+    }
+    & .space{
+        margin-left: 353px;
+        @media #{$xl}{
+            margin-left: 150px;
+        }        
+        @media #{$lg}{
+            margin-left: 0px;
+        }
+        @media #{$md}{
+            margin-left: 0px;
+        }
+        @media #{$xs}{
+            margin-left: 0px;
+        }
+    }
+    &.space2{
+        margin-left: 285px;
+        @media #{$lg,$md,$xs}{
+            margin-left: 0;
+        }
+    }
+    span {
+        font-size: 18px;
+        border: 1px solid var(--si-border-3);
+        border-radius: 5px;
+        padding: 4px 12px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    &-white{
+        span{
+            color: #fff;
+            border: 1px solid var(--si-border-6);
+        }
+        h2{
+            color: #fff;
+        }
+    }
+}
